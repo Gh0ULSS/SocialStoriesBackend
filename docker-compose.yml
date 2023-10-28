@@ -1,0 +1,41 @@
+version: '3.4'
+
+services:
+  backend:
+    container_name: "SunsetStoriesBackend"
+    build:
+      dockerfile: Backend.Dockerfile
+      context: .
+    ports:
+      - "80:80"
+      - "443:443"
+      - "7034:7034"
+      - "5118:5118"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80;https://+:7034;http://+:5118
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=sunset_stories
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/dev_cert.pfx
+    volumes:
+      - ./conf.d/https/:/https/:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - db
+  db:
+    container_name: "MySQL"
+    image: mysql:latest
+    restart: always
+    env_file:
+      - ./env/mysql.env
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    # Mount mysql db data
+    volumes:
+      - my_sql_data:/var/lib/mysql
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+volumes:
+  my_sql_data:

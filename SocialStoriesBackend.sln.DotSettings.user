@@ -1,0 +1,16 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Users\Hexo\.nuget\packages\automapper\12.0.1\lib\netstandard2.1\AutoMapper.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\Hexo\.nuget\packages\microsoft.identitymodel.jsonwebtokens\6.10.0\lib\netstandard2.0\Microsoft.IdentityModel.JsonWebTokens.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\Hexo\.nuget\packages\swashbuckle.aspnetcore.annotations\6.5.0\lib\net6.0\Swashbuckle.AspNetCore.Annotations.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\Hexo\.nuget\packages\swashbuckle.aspnetcore.filters.abstractions\7.0.8\lib\net5.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\Hexo\.nuget\packages\swashbuckle.aspnetcore.filters\7.0.8\lib\net5.0\Swashbuckle.AspNetCore.Filters.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c81a9a3e_002D2e0d_002D4efe_002D96a1_002D575bfc9494ee/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="True" ContinuousTestingMode="1" IsActive="True" Name="RouteClasses" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::FBFD7E99-02F4-4D4F-B66D-05919E5DF456::net6.0::unitTests.Controllers.Controllers&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
